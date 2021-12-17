@@ -1,7 +1,7 @@
 /* basic css for all start */
 :root{ /*color */
     --main-color:#24344d;
-    --background: rgb(165, 117, 145);
+    --background: rgb(53, 0, 31);
     --black:#000000;
     --white: #ffffff;
 }
@@ -9,55 +9,62 @@
     margin:0;
     padding:0;
     font-size: 15px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 /* basic css for all end */
 
+body{ /*background body */
+    background-image:url('/assets/img/backg.png')
+}
 
 /* form css start */
 a:link{ /* link not underlined */
     text-decoration:none; 
 } 
+textarea { /* no resize textarea in navigator */
+    resize: none;
+    border-radius: 15px;
+    padding: 8px;
+}
 form{
     position: relative;
     width: 340px;
     margin: 100px auto;
     text-align: center;
-    background: var(--background);
+    background: linear-gradient(197deg, #ff924d 2%, #ff8f4d 6%, #fe8852 14%, #fe6e55 19%, #fe6157 26%, #fe5957 34%, #fd4c59 39%, #f84964 46%, #ef4574 56%, #e74086 64%, #df3d94 69%, #da3a9e 75%, #d337a9 80%, #c834bf 86%, #c034d0 92%);
     padding: 20px;
-    border-radius: 5px;
-}
-#formConnect{
-    height: 245px;
-}
-#formRegistration{
-    height: 660px;
-}
-#formPayment{
-    height: 525px;
+    border-radius: 20px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #card{
     border-radius: 25px;
     margin-bottom: 10px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 h4{
     font-size: 2em;
     margin-bottom: 25px;
     color: var(--white);
+    padding: 15px;
+    opacity: 1;
 }
 p{
     color: var(--white);
     padding: 15px;
+    opacity: 1;
 }
 input{
     display: block;
     width: 315px;
-    padding: 14px;
-    border-radius: 25px;
+    padding: 8px;
+    border-radius: 15px;
     border: 0;
     margin-bottom: 10px;
     color: var(--background);
     outline: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .sub{ /* input submit */
     position: relative;
@@ -67,6 +74,7 @@ input{
     margin-right: 30%;
     background: var(--main-color);
     color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 /* form css end */
 
@@ -78,30 +86,38 @@ input{
     text-align: center;
 }
 .flex1{
-    background: var(--background);
+    background: linear-gradient(197deg, #ff924d 2%, #ff8f4d 6%, #fe8852 14%, #fe6e55 19%, #fe6157 26%, #fe5957 34%, #fd4c59 39%, #f84964 46%, #ef4574 56%, #e74086 64%, #df3d94 69%, #da3a9e 75%, #d337a9 80%, #c834bf 86%, #c034d0 92%); opacity: 0.85;
     width: 100%;
     height: auto;
     margin: 1%;
     border-radius: 5px;
 }
 .flex2{
-    background-image:url('./assets/img/children.');
+    /* img background start */
+    background-image:url('/assets/img/children.jpg');
     display: inline-block;
     background-size: cover;
+    background-position:50% 50%;
+    /* img background end */
     width: 48%;
-    height: 200px;
+    height: 300px;
     margin: 1%;
     border-radius: 5px;
 }
 .flex3{
-    background: var(--background);
+    /* img background start */
+    background-image:url('/assets/img/computer.jpg');
+    display: inline-block;
+    background-size: cover;
+    background-position:50% 50%;
+    /* img background end */
     width: 48%;
-    height: 200px;
+    height: 300px;
     margin: 1%;
     border-radius: 5px;
 }
 .flex4{
-    background: var(--background);
+    background: linear-gradient(197deg, #ff924d 2%, #ff8f4d 6%, #fe8852 14%, #fe6e55 19%, #fe6157 26%, #fe5957 34%, #fd4c59 39%, #f84964 46%, #ef4574 56%, #e74086 64%, #df3d94 69%, #da3a9e 75%, #d337a9 80%, #c834bf 86%, #c034d0 92%); opacity: 0.85;
     width: 100%;
     height: auto;
     margin: 1%;

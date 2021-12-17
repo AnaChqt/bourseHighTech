@@ -12,7 +12,12 @@
 
     <!-- form start -->
     <form> 
-        <h4>Inscription</h4>
+        <h4>Nous contacter</h4>
+
+        <select required id="card" name="visitorOrExhibitor">
+            <option value="exhibitor">Visiteur</option>
+            <option value="visitor">Exposant</option>
+        </select>
 
         <label for="firstname"></label>
         <input required autocomplete="given-name" id="fistName" type="text" name=firstName" placeholder="Prénom">
@@ -26,23 +31,11 @@
         <label for="phoneNumber"></label>
         <input required autocomplete="country-name" type="tel" name="phoneNumber" placeholder="Numéro de téléphone">
 
-        <label for="adress"></label>
-        <input required autocomplete="street-address" type="text" name="adress" placeholder="Adresse">
-
-        <label for="postalCode"></label>
-        <input required autocomplete="postal-code" type="text" name="postalCode" placeholder="Code postal">
-
-        <label for="city"></label>
-        <input required autocomplete="country-name" type="text" name="city" placeholder="Ville">
-    
-        <label for="password"></label>
-        <input required autocomplete="new-password" type="password" name="password" placeholder="Mot de passe">
-
-        <label for="passwordConfirm"></label>
-        <input required type="password" name="passwordConfirm" placeholder="Confirmez mot de passe">
+        <label for="contactMessage"></label>
+        <textarea required cols="30" rows="5" type="text" placeholder="Votre message" name="contactMessage"></textarea>
 
         <label for="sub"></label>
-        <a href="./connect.html" target="self"><input class="sub" type="submit" Value="S'inscrire"></a>
+        <a href="./index.html"><input class="sub" type="submit" Value="Envoyer"></a>
     </form>
     <!-- form end -->
 
