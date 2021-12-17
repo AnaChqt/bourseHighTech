@@ -1,0 +1,110 @@
+/* basic css for all start */
+:root{ /*color */
+    --main-color:#24344d;
+    --background: rgb(165, 117, 145);
+    --black:#000000;
+    --white: #ffffff;
+}
+*{
+    margin:0;
+    padding:0;
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+}
+/* basic css for all end */
+
+
+/* form css start */
+a:link{ /* link not underlined */
+    text-decoration:none; 
+} 
+form{
+    position: relative;
+    width: 340px;
+    margin: 100px auto;
+    text-align: center;
+    background: var(--background);
+    padding: 20px;
+    border-radius: 5px;
+}
+#formConnect{
+    height: 245px;
+}
+#formRegistration{
+    height: 660px;
+}
+#formPayment{
+    height: 525px;
+}
+#card{
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+h4{
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: var(--white);
+}
+p{
+    color: var(--white);
+    padding: 15px;
+}
+input{
+    display: block;
+    width: 315px;
+    padding: 14px;
+    border-radius: 25px;
+    border: 0;
+    margin-bottom: 10px;
+    color: var(--background);
+    outline: none;
+}
+.sub{ /* input submit */
+    position: relative;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background: var(--main-color);
+    color: var(--white);
+}
+/* form css end */
+
+/* flex start for product.html */
+.flexContainer{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+}
+.flex1{
+    background: var(--background);
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    border-radius: 5px;
+}
+.flex2{
+    background-image:url('./assets/img/children.');
+    display: inline-block;
+    background-size: cover;
+    width: 48%;
+    height: 200px;
+    margin: 1%;
+    border-radius: 5px;
+}
+.flex3{
+    background: var(--background);
+    width: 48%;
+    height: 200px;
+    margin: 1%;
+    border-radius: 5px;
+}
+.flex4{
+    background: var(--background);
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    border-radius: 5px;
+}
+/* flex end for product.html */

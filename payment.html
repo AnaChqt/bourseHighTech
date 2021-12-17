@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <meta charset="utf-8">
+    <title>high tech</title>
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- form start -->
+    <form id="formPayment"> 
+        <h4>Réserver</h4>
+
+        <label for="mail"></label>
+        <input required autocomplete="email" id="mail" type="email" name="userMail" placeholder="Email">
+    
+        <label for="password"></label>
+        <input required autocomplete="new-password" type="text" name="password" placeholder="Mot de passe">
+
+        <h4>Payer</h4>
+
+        <select required id="card" name="userCard">
+            <option value="visa">Visa</option>
+            <option value="mc">Mastercard</option>
+            <option value="amex">American Express</option>
+        </select>
+
+        <label for="cardNumber"></label>
+        <input required type="number" name="cardNumber" placeholder="Numéro de carte">
+
+        <label for="expiry"></label>
+        <input required type="month" name="expiry">
+
+        <label for="cvv"></label>
+        <input required type="number" name="cvv" placeholder="CVV">
+
+        <label for="sub"></label>
+        <a href="./registration.html"><input class="sub" type="submit" Value="Payer"></a>
+    </form>
+    <!-- form end -->
+
+</body>
+</html>
