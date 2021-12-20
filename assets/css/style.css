@@ -1,238 +1,296 @@
-                            body {
-                                background-color: rgb(255, 254, 254);    
-                                margin: 0;
-                                
-                            }
+    body {
+       
+        margin: 0;
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
 
 
-                            .accueil {
-                                height:auto;
-                                display: flex;
-                            }
+    /* police et couleur du titre en haut au mileu */    
+    h1 {
+
+        color: black;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 35px;
+        }
+    /*------------------------*/    
 
 
-                            .entete {
-                                height: 400px;
-                                display: flex;
-                                flex-wrap:wrap;
-                            }
+    /* logo en haut à gauche */    
+    .topleft {
+        position: absolute;
+        top: 3%;
+        left: 10px;
+        }
+    /*------------------------*/    
+    
+    /* position et marge du bloc du texte au milieu en haut */
+    .middle {
+        
+        position: absolute;
+        top: 10%;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        }
+    /*----------------------------*/
+
+    /* position et marge du bloc de la partie en haut à droite (boutons)  */
+    .topright{
+        position: absolute;
+        top: 4%;
+        left: 83%;
+        }
+    
+
+    /*  Forme et effets des Bouton en hautt à droite  */
+    .button {
+        padding: 3% 30px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color:#1375d1;
+        border: 5px;
+        border-radius: 15px;
+        box-shadow: 0 9px rgb(39, 31, 182);
+        }
+    
+    .button:hover {background-color: #ccab17}
+    
+    .button:active {
+        background-color: #eecf44;
+        box-shadow: 0 5px rgb(26, 17, 17);
+        transform: translateY(4px);
+        }
+    /*----------------*/    
 
 
-                            .blocklogo {
-                            width: 15%;
-                            height: 100px;
-                            
+    .header{
+        background-image: url('/assets/img/blur8.jpg') ;
+        
+        padding: 70px;
+        }
 
 
-                            }
+    #navbar {
+        overflow: hidden;
+        background: linear-gradient(197deg, #ff924d 2%, #ff8f4d 6%, #fe8852 14%, #fe6e55 19%, #fe6157 26%, #fe5957 34%, #fd4c59 39%, #f84964 46%, #ef4574 56%, #e74086 64%, #df3d94 69%, #da3a9e 75%, #d337a9 80%, #c834bf 86%, #c034d0 92%);
+        text-align: center;
+        border: 25px;
+        border-radius: 0px;
+        }
 
-                            .blockconnection {
-                            
-                            height: 100px;
-                            width: 85%;
-                            opacity: 70%;
+    #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 26px 26px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 0px;
+        }
+            
+    #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+            
+    #navbar a.active {
+        background-color: #1375d1;
+        color: white;
+        }
+            
+    .content {
+        padding: 16px;
+        }
+        
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }
+        
+    .sticky + .content {
+        padding-top: 60px;
+        } 
+        
+    .content {
 
-                        }
-                            
-                            .espacevide{
-                            height: 50%;
-                            width: 70%;
+        margin-top: 3%;
+        margin-left: 18%;
+        margin-right: 18%;
+        }
 
-
-                            }
-                            .boutons {
-                                height: 50%;
-                                width: 100%;
-
-
-                            }
-
-                            
-                            .blockmenu {
-                                width: 100%;
-                                height: 300px ;
-                                
-                            }
-                            
-
-
-
-
-
-                            ul {
-                                list-style-type: none;
-                                margin: 0px;
-                                padding: 0px;
-                                overflow:hidden;
-                                background: linear-gradient(197deg, #ff924d 2%, #ff8f4d 6%, #fe8852 14%, #fe6e55 19%, #fe6157 26%, #fe5957 34%, #fd4c59 39%, #f84964 46%, #ef4574 56%, #e74086 64%, #df3d94 69%, #da3a9e 75%, #d337a9 80%, #c834bf 86%, #c034d0 92%);
-                                height: 300px;
-                                
-                            
-                            }
-
-                            ul:hover {
-                                box-shadow: inset 2px 2px 3px rgba(22, 22, 22, 0.6),
-                                inset -2px -2px 3px rgba(0, 0, 0, .6);
-                                
-                            }
-                                
-                                
-
-
-                            
-                            
-                            li {
-                                float :left;
-                            }
-                            
-                            li a {
-                                display: block;
-                                color: white;
-                                text-align: center;
-                                padding: 14px 16px;
-                                text-decoration: none;
-                            }
-                            
-                            li a:hover {
-                                background-color: #e7a9d4;
-                            }
+    .car{
+        border: 25px;
+        border-color: cornflowerblue;
+        border-radius: 30Px;
+        position: center;
+        
+        color: rgb(49, 49, 49);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        font: bold ;
+        }
+        
+    .map {
+        left: 50%;
+        padding-left: 40%;
+        margin-left: auto;
+        margin-right: 35%;
+        }
 
 
+    hr {
+        margin-left: 18%;
+        margin-right: 18%;
+        }
+        
+    p {
 
-
-                            .blockconnection{
-                                display: flex;
-
-
-
-                            }
-                        .inscription {
-                            float :right;
-                            border: 0;
-                            line-height: 2.5;
-                            padding: 5px 20px;
-                            font-size: 1rem;
-                            text-align: center;
-                            color: #fff;
-                            text-shadow: 1px 1px 1px #000;
-                            border-radius: 10px;
-                            background-color: transparent;
-                            
-                            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                                        inset -2px -2px 3px rgba(0, 0, 0, .6);
-
-                            
-                        }
-
-                        .inscription:hover {
-                            background-color: rgba(255, 0, 0, 1);
-                        }
-
-                        .inscription:active {
-                            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                                        inset 2px 2px 3px rgba(0, 0, 0, .6);
-                        }
-
-                        .connexion {
-                        float: right;
-                        
-                            border: 0;
-                            line-height: 2.5;
-                            padding: 5px 20px;
-                            font-size: 1rem;
-                            text-align: center;
-                            color: #fff;
-                            text-shadow: 1px 1px 1px #000;
-                            border-radius: 10px;
-                            background-color: transparent;
-                            
-                            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                                        inset -2px -2px 3px rgba(0, 0, 0, .6);
-
-                        }
-
-                        .connexion:hover {
-                            background-color: rgba(255, 0, 0, 1);
-                        }
-
-                        .connexion:active {
-                            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                                        inset 2px 2px 3px rgba(0, 0, 0, .6);
-                        }
+        margin-top: 5%;
+        }
 
 
 
+    /* Effets images de la page d'accueil */
 
-                        .contenu {
-
-                            display: flex;
-                            flex-wrap: wrap;
-                            
-                            align-items: center;
-                            justify-content: space-evenly;
-                        
-                        }
-
-                        .imagetest {
-                            height: 500px;
-                            width: 100px;
-                        }
-                        .presentation {
-                            
-                            background-color: transparent;
-                            height: 500px ;
-                            width: 100%;
-                            border-radius: 30px 30px 30px 30px;
-                            
-                            margin-bottom: 40px;
-                            margin-left: 20px;
-                            margin-right: 20px;
-                            margin-top: 25px;
-                        }
-                        
-                        .presentation:hover {
-                            box-shadow: inset 2px 2px 3px rgba(22, 22, 22, 0.6),
-                            inset -2px -2px 3px rgba(0, 0, 0, .6);
-                            
-                        }
-
-
-                        .plan {
-
-                            background-color: rgb(29, 26, 26);
-                            height: 500px ;
-                            width: 100%;
-                            border-radius: 30px 30px 30px 30px;
-                            
-                            margin-bottom: 40px;
-                            margin-left: 20px;
-                            margin-right: 20px;
-                            margin-top: 25px;
-
-                        }
-
-
-                        .mesures {
-
-                            background-color: rgb(95, 0, 0);
-                            height: 500px ;
-                            width: 100%;
-                            border-radius: 30px 30px 30px 30px;
-                            
-                            margin-bottom: 40px;
-                            margin-left: 20px;
-                            margin-right: 20px;
-                            margin-top: 25px;
-
-
-
-                        }
-
-
-
-
-
-                        
-
-
-
+    * {
+        box-sizing: border-box;
+        }
+        
+        .row > .column {
+        padding: 0 8px;
+        }
+        
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        
+        .column {
+        float: left;
+        width: 25%;
+        }
+        
+        /* La Modal (background) */
+        .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+        }
+        
+        /* Contenu de la modal */
+        .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+        }
+        
+        /* Bouton fermer */
+        .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+        }
+        
+        .mySlides {
+        display: none;
+        }
+        
+        .cursor {
+        cursor: pointer;
+        }
+        
+        /* Bouton suivant et précédant */
+        .prev,
+        .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+        }
+        
+        /* position du bouton suivant sur la droite */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+        
+        /* En survolant , faire l'effet transparent/ noir */
+        .prev:hover,
+        .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* nombre de 1 à 3 */
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+        
+        img {
+        margin-bottom: -4px;
+        }
+        
+        .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+        }
+        
+        .demo {
+        opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+        opacity: 1;
+        }
+        
+        img.hover-shadow {
+        transition: 0.3s;
+        }
+        
+        .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
