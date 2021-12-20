@@ -153,6 +153,7 @@ textarea { /* no resize textarea in navigator */
     resize: none;
     border-radius: 15px;
     padding: 13px;
+    width: 315px;
 }
 form{
     position: relative;
