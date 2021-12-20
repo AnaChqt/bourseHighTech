@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente organisée</title>
+    <script src="/assets/js/style.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/logo.png">
+
+</head>
+
+
+<body> 
+    <!-- bloc du haut avec le logo et les boutons de connextion -->
+    <div class="header">
+        <div class="topleft">
+            <img src="/assets/img/logo.png" alt="logo de la mairie d'amiens" style="width: 230px;height: 90px;">
+        </div>
+        <div class="middle">
+    </div>
+        <div class="topright">
+            <button class="button">Visiteur</button> 
+            <button class="button">Exposant</button> 
+            </div>
+        </div>
+        <!-- barre de navigation qui reste collé en haut -->
+        <div id="navbar">
+            <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Accueil</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+        <div style="float: right; padding-right: 3%;">
+            <a href="https://www.facebook.com/AmiensMetropoleOfficiel" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/amiensmetropole" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="https://www.youtube.com/user/amiensville" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+        </div>
+    </div>
+
+
+
+    <div class="content">
+            <h3 style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Bourse High tech organisée en collaboration avec la ville d'Amiens</h3>
+
+            <p><h6 style="text-align: center; color:rgb(109, 109, 109);">Préparez-vous à venir le Samedi 25 Décembre <br> Horraires : 08h00 à 18h00 sans interruptions. Entrée gratuite. </p></h6>
+
+            <h4 style="text-align:center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Découvrez ce qui vous attend</h4><br>
+            <hr></hr>
+
+        <div class="row">
+            <div class="column">
+                <img src="/assets/img/1.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">  
+                <img src="/assets/img/2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="/assets/img/3.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="/assets/img/4.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+            </div>
+
+            <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="/assets/img/1.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="/assets/img/2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="/assets/img/3.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="/assets/img/4.jpeg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+
+
+                <div class="column">
+                <img class="demo cursor" src="/assets/img/1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="/assets/img/2.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="/assets/img/3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="/assets/img/4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+            </div>
+            </div>
+
+
+
+
+        <p> Principaux Partenaires</p>
+        <p>
+            <img src="/assets/img/amazon_300x150.png" alt="logo amazon" style="width: 120px;height: 80px;">
+            <img src="/assets/img/blackberry-logo_300x150.gif" alt="" style="width: 120px;height: 80px;">
+            <img src="/assets/img/bosch_300x150.png" alt="" style="width: 120px;height: 80px;">
+            <img src="/assets/img/ibm_300x150.jpeg" alt=""  style="width: 120px;height: 80px;">
+            <img src="/assets/img/canon-logo_300x150.jpeg" alt="" style="width: 120px;height: 80px;">
+            <img src="/assets/img/google_300x150.jpeg" alt="" style="width: 120px;height: 80px;">
+
+            <br> <h6> <a href="/partenaires.html"> Voir tous les partenaires</a></h6>
+
+
+
+
+        </p>
+
+
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>The navbar will stick to the top when you reach its scroll position.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.468589531507!2d2.2992870157111547!3d49.89000537940187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e78446501e03cb%3A0xd90c13e3b01c0596!2s70%20Rue%20des%20Jacobins%2C%2080000%20Amiens!5e0!3m2!1sfr!2sfr!4v1639913119202!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+        </div>
+
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+
+
+        </div>
+        <!-- Barre de Navigation en haut  -->
+        <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+        }
+        </script>
+
+        <!-- Images s'affichant en grand dès qu'on clique dessus -->
+        <script>
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
+
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* police et couleur du titre en haut au mileu */
+h1 {
+
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 35px;
+    }
+
+
+/* logo en haut à gauche */
+.topleft {
+    position: absolute;
+    top: 3%;
+    left: 10px;
+    }
+
+
+/* position et marge du bloc du texte au milieu en haut */
+.middle {
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    }
+
+/* position et marge du bloc de la partie en haut à droite (boutons)  */
+.topright{
+    position: absolute;
+    top: 4%;
+    left: 83%;
+    }
+
+
+/*  Forme et effets des Bouton en hautt à droite  */
+.button {
+    padding: 3% 30px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color:#1375d1;
+    border: 5px;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(39, 31, 182);
+    }
+
+.button:hover {background-color: #ccab17}
+
+.button:active {
+    background-color: #eecf44;
+    box-shadow: 0 5px rgb(26, 17, 17);
+    transform: translateY(4px);
+    }
+
+
+.header{
+    background-image: url('/assets/img/blur8.jpg') ;
+
+    padding: 70px;
+    }
+#navbar {
+    overflow: hidden;
+    background: linear-gradient(197deg, #ff924d 2%, #ff8f4d 6%, #fe8852 14%, #fe6e55 19%, #fe6157 26%, #fe5957 34%, #fd4c59 39%, #f84964 46%, #ef4574 56%, #e74086 64%, #df3d94 69%, #da3a9e 75%, #d337a9 80%, #c834bf 86%, #c034d0 92%);
+    text-align: center;
+    border: 25px;
+    border-radius: 0px;
+    }
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 26px 26px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 0px;
+    }
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+#navbar a.active {
+    background-color: #1375d1;
+    color: white;
+    }
+
+.content {
+    padding: 16px;
+    }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+.sticky + .content {
+    padding-top: 60px;
+    } 
+
+.content {
+
+    margin-top: 3%;
+    margin-left: 18%;
+    margin-right: 18%;
+    }
+
+.car{
+    border: 25px;
+    border-color: cornflowerblue;
+    border-radius: 30Px;
+    position: center;
+
+    color: rgb(49, 49, 49);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font: bold ;
+    }
