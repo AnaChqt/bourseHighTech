@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vente organisée</title>
+
+        <link rel="stylesheet" href="/assets/css/style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/logo.png">
+
+    </head>
+
+    <div class="header">
+        <div class="topleft">
+            <a href="/accueil.html"><img src="/assets/img/logo.png" alt="logo de la mairie d'amiens" style="width: 230px;height: 90px;"></a>
+        </div>
+        <div class="middle">
+    </div>
+        <div class="topright">
+            <a href="/registration.html"><button class="button">Inscription</button></a> 
+            <a href="/connect.html"><button class="button">Connexion</button> </a>
+            </div>
+        </div>
+    <!-- barre de navigation qui reste collé en haut -->
+    <div id="navbar">
+        <a class="active" href="/accueil.html"><i class="fa fa-fw fa-home"></i> Accueil</a>
+        <a href="/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+        <a href="/connect.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        <a href="/faq.html"> FAQ</a>
+    <div style="float: right; padding-right: 3%;">
+        <a href="https://www.facebook.com/AmiensMetropoleOfficiel" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/amiensmetropole" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="https://www.youtube.com/user/amiensville" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-snapchat-ghost"></a>
+    </div>
+</div>
+
+<body>
+
+    <!-- form start -->
+    <form> 
+        <h4>Connexion</h4>
+        <p>Connectez-vous pour retrouver toutes vos informations <br><br>
+        Pas encore de compte ? <a href="./registration.html"> Inscrivez-vous ! </a>
+        </p>
+        <label for="mail"></label>
+        <input required autocomplete="email" id="mail" type="email" name="userMail" placeholder="Email">
+    
+        <label for="password"></label>
+        <input required autocomplete="new-password" type="password" name="password" placeholder="Mot de passe">
+
+        <label for="sub"></label>
+        <a href="./registration.html"><input class="sub" type="submit" Value="Connexion"></a>
+    </form>
+    <!-- form end -->
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+        }
+        </script>
+</body>
+</html>

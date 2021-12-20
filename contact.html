@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vente organisée</title>
+        <script src="/assets/js/style.js"></script>
+        <link rel="stylesheet" href="/assets/css/style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/logo.png">
+
+    </head>
+
+<div class="header">
+    <div class="topleft">
+        <a href="/accueil.html"><img src="/assets/img/logo.png" alt="logo de la mairie d'amiens" style="width: 230px;height: 90px;"></a>
+    </div>
+    <div class="middle">
+</div>
+<div class="topright">
+    <a href="/registration.html"><button class="button">Inscription</button></a> 
+    <a href="/connect.html"><button class="button">Connexion</button> </a>
+    </div>
+</div>
+    </div>
+    <!-- barre de navigation qui reste collé en haut -->
+    <div id="navbar">
+        <a class="active" href="/accueil.html"><i class="fa fa-fw fa-home"></i> Accueil</a>
+        <a href="/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+        <a href="/connect.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        <a href="/faq.html"> FAQ</a>
+    <div style="float: right; padding-right: 3%;">
+        <a href="https://www.facebook.com/AmiensMetropoleOfficiel" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/amiensmetropole" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="https://www.youtube.com/user/amiensville" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-snapchat-ghost"></a>
+    </div>
+</div>
+
+<body>
+
+    <!-- form start -->
+    <form> 
+        <h4>Nous contacter</h4>
+    <p>Vous avez des questions ? Des remarques ?</p><br> <br>
+    <p class="secu">Contactez-nous en remplissant ce formulaire, et nous vous répondrons dans les meilleurs délais.</p> 
+        <select required id="card" name="visitorOrExhibitor">
+            <option value="exhibitor">Visiteur</option>
+            <option value="visitor">Exposant</option>
+        </select>
+
+        <label for="firstname"></label>
+        <input required autocomplete="given-name" id="fistName" type="text" name=firstName" placeholder="Prénom">
+
+        <label for="lastName"></label>
+        <input required autocomplete="family-name" id="lastName" type="text" name="lastName" placeholder="Nom">
+
+        <label for="mail"></label>
+        <input required autocomplete="email" id="mail" type="email" name="userMail" placeholder="Email">
+
+        <label for="phoneNumber"></label>
+        <input required autocomplete="country-name" type="tel" name="phoneNumber" placeholder="Numéro de téléphone">
+
+        <label for="contactMessage"></label>
+        <textarea required cols="40" rows="5" type="text" placeholder="Votre message" name="contactMessage"></textarea>
+
+        <label for="sub"></label>
+        <a href="./index.html"><input class="sub" type="submit" Value="Envoyer"></a>
+    </form>
+    <!-- form end -->
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+        }
+        </script>
+
+</body>
+</html>

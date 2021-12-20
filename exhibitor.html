@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vente organisée</title>
+        <script src="/assets/js/style.js"></script>
+        <link rel="stylesheet" href="/assets/css/style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/logo.png">
+
+    </head>
+
+
+    <body> 
+        <!-- bloc du haut avec le logo et les boutons de connextion -->
+        <div class="header">
+            <div class="topleft">
+                <a href="/accueil.html"><img src="/assets/img/logo.png" alt="logo de la mairie d'amiens" style="width: 230px;height: 90px;"></a>
+            </div>
+            <div class="middle">
+        </div>
+            <div class="topright">
+                <a href="/registration.html"><button class="button">Inscription</button></a> 
+                <a href="/connect.html"><button class="button">Connexion</button> </a>
+                </div>
+            </div>
+            <!-- barre de navigation qui reste collé en haut -->
+            <div id="navbar">
+                <a class="active" href="/accueil.html"><i class="fa fa-fw fa-home"></i> Accueil</a>
+                <a href="/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+                <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+                <a href="/connect.html"><i class="fa fa-fw fa-user"></i> Login</a>
+                <a href="/faq.html"> FAQ</a>
+            <div style="float: right; padding-right: 3%;">
+                <a href="https://www.facebook.com/AmiensMetropoleOfficiel" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/amiensmetropole" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="https://www.youtube.com/user/amiensville" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-snapchat-ghost"></a>
+            </div>
+        </div>
+
+
+<body>
+
+    <!-- ok ok -->
+    <div class="flexContainer">
+        <div class="flex1">
+            <h4>Horaires</h4>
+            <p>Mecredi 5 janvier 2021 de 8h à 21h.</p>
+            <p>70 Rue des Jacobins, <br> 80000 Amiens</p>
+        </div>
+
+        <div class="flex1">
+            <h4>Informations</h4>
+            <p>Les exposants sont priés de lire les informations suivantes pour ne rien oublier le jour "J".</p>
+            <p>Prévoyez des tables et des chaises.<br>
+            Répartissez vos objets en famille d’objets, pour que les acheteurs aient une vision claire de tout ce que vous vendez.<br>
+            Affichez clairement les prix.<br>
+            Tenez votre stand à deux, pour toujours surveiller vos objets.<br>
+            Attention à la météo : prévoir tout le nécessaire pour protéger vos objets en cas d’averses (bâches).<br>
+            Pensez à la monnaie.<br>
+            Prévoyez des sacs plastiques pour les acheteurs, et du papier journal pour emballer les objets fragiles.</p>
+        </div>
+
+        <div class="flex1">
+            <h4>Réservation</h4>
+            <p>Oubliez pas de réservé l'emplacement et de réalisé le paiement pour être certain que la réservation soit prise en compte.</p>
+            <p>Vous pouvez suivre ce <a href="./payment.html">lien</a> si cela n'est pas déja fait.</p>
+        </div>
+
+    </div>
+    <!-- ok end -->
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+        }
+        </script>
+</body>
+</html>
