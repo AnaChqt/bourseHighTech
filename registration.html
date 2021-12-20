@@ -22,8 +22,8 @@
     <!-- barre de navigation qui reste collé en haut -->
     <div id="navbar">
         <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Accueil</a>
-        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+        <a href="./contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i> FAQ</a>
         <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
     <div style="float: right; padding-right: 3%;">
         <a href="https://www.facebook.com/AmiensMetropoleOfficiel" class="fa fa-facebook"></a>
@@ -39,11 +39,12 @@
     <!-- form start -->
     <form> 
         <h4>Inscription</h4>
-
+        <p>Vous êtes exposants ? Inscrivez-vous via ce formulaire. <br><br>
+        <em class='secu'>En raison des contraintes liées à la sécurité, il ne sera malheureusement pas possible de réserver un emplacement le jour même.</em></p>
         <label for="firstname"></label>
         <input required autocomplete="given-name" id="fistName" type="text" name=firstName" placeholder="Prénom">
 
-        <label for="lastName"</label>
+        <label for="lastName"></label>
         <input required autocomplete="family-name" id="lastName" type="text" name="lastName" placeholder="Nom">
 
         <label for="mail"></label>
@@ -68,7 +69,7 @@
         <input required type="password" name="passwordConfirm" placeholder="Confirmez mot de passe">
 
         <label for="sub"></label>
-        <a href="./connect.html" target="self"><input class="sub" type="submit" Value="S'inscrire"></a>
+        <a href="./payment.html" target="self"><input class="sub" type="submit" Value="S'inscrire"></a>
     </form>
     <!-- form end -->
 

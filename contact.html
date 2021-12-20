@@ -10,7 +10,7 @@
 
 <div class="header">
     <div class="topleft">
-        <img src="/assets/img/logo.png" alt="logo de la mairie d'amiens" style="width: 230px;height: 90px;">
+        <img href="#" src="/assets/img/logo.png" alt="logo de la mairie d'amiens" style="width: 230px;height: 90px;">
     </div>
     <div class="middle">
 </div>
@@ -22,8 +22,8 @@
     <!-- barre de navigation qui reste collé en haut -->
     <div id="navbar">
         <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Accueil</a>
-        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+        <a href="./contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i> FAQ</a>
         <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
     <div style="float: right; padding-right: 3%;">
         <a href="https://www.facebook.com/AmiensMetropoleOfficiel" class="fa fa-facebook"></a>
@@ -39,7 +39,8 @@
     <!-- form start -->
     <form> 
         <h4>Nous contacter</h4>
-
+    <p>Vous avez des questions ? Des remarques ?</p><br> <br>
+    <p class="secu">Contactez-nous en remplissant ce formulaire, et nous vous répondrons dans les meilleurs délais.</p> 
         <select required id="card" name="visitorOrExhibitor">
             <option value="exhibitor">Visiteur</option>
             <option value="visitor">Exposant</option>
@@ -48,7 +49,7 @@
         <label for="firstname"></label>
         <input required autocomplete="given-name" id="fistName" type="text" name=firstName" placeholder="Prénom">
 
-        <label for="lastName"</label>
+        <label for="lastName"></label>
         <input required autocomplete="family-name" id="lastName" type="text" name="lastName" placeholder="Nom">
 
         <label for="mail"></label>
