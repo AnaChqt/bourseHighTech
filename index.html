@@ -25,7 +25,7 @@
 
         <script>
         // Date à laquelle le compte a rebour doit s'arrêter 
-        var countDownDate = new Date("dec 25, 2021 08:00:00").getTime();
+        var countDownDate = new Date("jan 05, 2022 08:00:00").getTime();
 
         // Mise à jour du compte à rebour toutes les 1 seconde
         var x = setInterval(function() {
@@ -43,7 +43,7 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
         // Affiche le résultat dans un élément avec id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        document.getElementById("demo").innerHTML = days + "j " + hours + "h "
         + minutes + "m " + seconds + "s ";
             
         // Si le compte à rebours est terminé, écrivez du texte
