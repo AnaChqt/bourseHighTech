@@ -4,7 +4,7 @@ body, html {
     }
 
     .bgimg {
-    background-image: url('https://pixabay.com/get/g28aacc7288fd57c63d0e3d0cd464d3f624deae56a16b4dea43ef76f4efbb5f14ffe5b944da8e6b6c82f23c3222cbfd39bde8bbec1397f8a6f97567489e33118c_1920.jpg');
+    background-image: url('/assets/img/index.jpeg');
     height: 100%;
     background-position: center;
     background-size: cover;
