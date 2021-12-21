@@ -73,7 +73,7 @@ h1 {
     }
 
 .header{
-    background-image: url('/assets/img/blur8.jpg') ;
+    background-image: url('./assets/img/blur8.jpg') ;
 
     padding: 70px;
     }
@@ -140,7 +140,7 @@ h1 {
     }
 
 body{ /*background body */
-    background-image:url('/assets/img/background.jpg');
+    background-image:url('./assets/img/background.jpg');
     background-size: cover;
     background-position:50% 50%;
 }
@@ -153,6 +153,7 @@ textarea { /* no resize textarea in navigator */
     resize: none;
     border-radius: 15px;
     padding: 13px;
+    width: 315px;
 }
 form{
     position: relative;
@@ -231,7 +232,7 @@ input{
 }
 .flex2{
     /* img background start */
-    background-image:url('/assets/img/children.jpg');
+    background-image:url('./assets/img/children.jpg');
     display: inline-block;
     background-size: cover;
     background-position:50% 50%;
@@ -243,7 +244,7 @@ input{
 }
 .flex3{
     /* img background start */
-    background-image:url('/assets/img/computer.jpg');
+    background-image:url('./assets/img/computer.jpg');
     display: inline-block;
     background-size: cover;
     background-position:50% 50%;
